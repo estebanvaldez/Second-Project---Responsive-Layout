@@ -1,0 +1,360 @@
+/**********************************
+Stlye.CSS Responive Layout Project
+**********************************/
+
+header h1, .bio p, .portfolio h5, .contact, footer {
+	text-align: center;
+}
+
+body {
+	background-color: #FFF;
+}
+
+a.nav-link {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/**********************************
+Main Navigation Style 
+**********************************/
+
+header {
+	background-color: #3F51B5;
+	box-shadow: 0px 1px 1px #3F51B5;
+}
+
+.header-name {
+	color: #FFF;
+	margin-top: 0;
+	padding-top: 15px;
+}
+
+.main-nav {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	color: #FFF;
+}
+
+.main-nav a {
+	background-color: #3F51B5;
+	padding: 10px 0;
+	margin: 3px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/**********************************
+Bio Styles
+**********************************/
+
+.bio {
+	background-color: #FFF;
+}
+
+.bio img {
+	display: block;
+	margin: 30px auto;
+	border-radius: 5px;
+}
+
+.bio-image img {
+	width: 85%;
+	max-width: 367px;
+}
+
+.bio p {
+	margin: 16px 25px 60px 25px;
+	line-height: 1.5;
+	color: grey;
+}
+
+/**********************************
+Portfolio Styles
+**********************************/
+
+.portfolio {
+	background-color: #C5CAE9;
+}
+
+.portfolio-header {
+	margin: 15px auto 45px auto;
+	color: #4a4a4a;
+	font-weight: 900;
+	width: 60%;
+	border-top: 5px solid #B6B6B6;
+	padding-top: 10px;
+}
+
+.portfolio ul {
+	list-style: none;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.portfolio-img {
+	width: 95%;
+}
+
+.project-title, .project-description {
+	color: #4a4a4a;
+}
+
+.project-description {
+	padding-bottom: 15px;
+}
+
+/**********************************
+Contact Div Styles
+**********************************/
+
+.contact-header {
+	color: #4a4a4a;
+	font-weight: 900;
+	width: 60%;
+	margin: 70px auto 25px auto;
+	border-top: 5px solid #B6B6B6;
+	padding-top: 15px;
+}
+
+.contact-info {
+	color: grey;
+	margin: 25px 25px 25px 25px;
+}
+
+.phone, .email {
+	font-weight: 700;
+	padding-left: 10px;
+}
+
+/**********************************
+Footer Styles
+**********************************/ 
+
+.footer {
+	border-top: 1px solid lightgrey;
+	margin-top: 40px;
+	background-color: #3F51B5;
+}
+
+.footer-nav {
+	display: none;
+	color: #FFF;
+}
+
+.name {
+	float: left;
+	margin: 20px 15px;
+	color: #FFF;
+	font-size: .85em;
+}
+
+.nav-button {
+	float: right;
+	margin: 20px 15px;
+	color: #FFF;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: .85em;
+}
+
+/**********************************
+Media Queries Tablet View 768px
+**********************************/
+
+@media (min-width: 768px) {
+	
+	/*****************
+	Header Section
+	******************/
+	
+	header {
+		height: 125px;
+	}
+	
+	/******************
+	Navigation
+	*******************/
+	
+	.main-nav {
+		display: block;
+	}
+	
+	.main-nav a {
+		margin: 0 25px;
+	}
+	
+	/******************
+	Bio Section
+	*******************/
+	
+	.bio {
+		margin-top: 50px;
+	}
+	
+	.bio-info p, .bio-image img {
+		margin: 0;
+	}
+	
+	.bio-info p {
+		text-align: justify;
+		width: 95%;
+	}
+	
+	.bio-info {
+		float: left;
+		width: 60%;
+		margin-left: 5%;
+		margin-right: 0;
+	}
+	
+	.bio-image {
+		float: right;
+		width: 30%;
+		
+		margin-left: 0;
+		margin-right: 5%;
+	}
+	
+	/*******************
+	Portfolio
+	********************/
+	
+	.portfolio-list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.portfolio-list li {
+		width: 47%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+	}
+	
+	.project-title {
+		margin: 25px 0;
+	}
+	
+	.project-description {
+		margin-bottom: 45px;
+		line-height: 1.5;
+	}
+	
+	/********************
+	Contact Section
+	********************/
+	
+	.contact {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/*****************
+	Footer Section
+	******************/
+	
+	.footer {
+		height: 125px;
+	}
+	
+	.footer-nav {
+		display: block;
+		float: right;
+		margin: 20px 15px;
+		color: #FFF;
+		font-weight: 700;
+		text-decoration: none;
+		font-size: .85em;
+	}
+	
+	.footer-nav a {
+		margin: 0 20px;
+	}
+	
+	.nav-button {
+		display: none;
+	}
+	
+} 
+
+/**********************************
+Media Queries Desktop View 1024px
+**********************************/
+
+@media (min-width: 1024px) {
+	
+	/*******************
+	Header Section
+	********************/
+	
+	.header-name {
+		float: left;
+		padding-top: 0;
+	}
+	
+	.main-nav {
+		float: right;
+		padding-top: 8px;
+	}
+	
+	.header-name, .main-nav {
+		margin: 45px 8.5% 0 8.5%;
+	}
+	
+	/*******************
+	Bio Section
+	*******************/
+	
+	.bio-info {
+		width: 50%;
+	}
+	
+	.bio-image {
+		width: 40%;
+		max-width: none;
+	}
+	
+	.bio-info p {
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.bio-image img {
+	
+		margin-left: 15%;
+	}
+	
+	/*******************
+	Portfolio Section
+	********************/
+	
+	.portfolio-list li {
+		width: 30%;
+		margin-left: 1.66%;
+		margin-right: 1.66%;
+	}
+	
+}
+
+/************
+Clearfix
+*************/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+
+
+
+
+
+
